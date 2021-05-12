@@ -1,0 +1,8 @@
+{
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/Python Exercises/*.py"
+    ],
+    "python.pythonPath": "C:\\Users\\patriciaann.parrocha\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+}
