@@ -1,2 +1,3 @@
 https://docs.python.org/3/tutorial/
+https://realpython.com/
 https://www.w3schools.com/python/
