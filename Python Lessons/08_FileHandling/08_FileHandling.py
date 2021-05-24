@@ -1,7 +1,20 @@
 import os
 os.system('cls')
 # Files Handling
-# Create, Read, Write and Delete
+# Write, Read, and Delete
 
-f = open("demo.txt", "r")
-print(f.read())
+# Creating and Writing to file.
+with open('test.txt', 'w') as file:
+    file.write("This is the first line")
+
+# Appending to file.
+with open('test.txt', 'a') as file:
+    file.write("\nThis is the second line")
+    file.write("\nThis is the third line")
+
+# Reading a file.
+with open('test.txt', 'r') as file:
+    print(file.read())
+
+# Removing a file.
+os.remove('test.txt')
