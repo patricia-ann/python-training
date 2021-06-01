@@ -11,19 +11,18 @@ import os
 import uuid
 os.system('cls')
 
-# Note profile name can be fetched from credentials file
+# Note that profile name can be fetched from ~/.aws/credentials file
 session = boto3.Session(profile_name='profile_name_here')
+
 # Specify s3 as the AWS resource to use
 s3_resource = session.resource('s3')
-
 
 # List Buckets in an account
 buckets = s3_resource.buckets.all()
 for bucket in buckets:
     print(bucket.name)
 
-# List the contents of specific bucket
-# Note that bucket_name_here is the name of the bucket you want to check
+# List the contents of a specific bucket
 my_bucket = s3_resource.Bucket('bucket_name_here')
 for file in my_bucket.objects.all():
     print(file.key)
@@ -43,7 +42,6 @@ print(response)
 # Download an Object
 bucket.download_file(
     'dog.jpg', "Python Lessons/12_Boto3/my_downloaded_file.jpg")
-
 
 # Delete an Object
 response = bucket.delete_objects(
