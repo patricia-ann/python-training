@@ -1,6 +1,4 @@
-# ==================================================
 # REQUESTS
-# ==========================================================================
 # In order to interact with data and files from a website, we need to send http requests using a given API url
 # In Python, we can use requests library to send HTTP requests easily.
 #
@@ -20,7 +18,7 @@
 # https://www.w3schools.in/http-tutorial/http-request-methods/
 # https://realpython.com/python-requests/
 # https://docs.thedogapi.com/
-# ==========================================================================
+
 import requests
 import os
 os.system('cls')
