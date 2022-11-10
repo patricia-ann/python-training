@@ -1,5 +1,7 @@
-import os
-os.system('cls')
+from os import system
+
+system("clear")
+
 # Control Flows - https://docs.python.org/3/tutorial/controlflow.html
 # If..Else
 num = 100

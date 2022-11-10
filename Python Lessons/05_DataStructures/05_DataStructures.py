@@ -1,5 +1,6 @@
-import os
-os.system('cls')
+from os import system
+
+system("clear")
 # Data Structures
 
 ## a. LISTS

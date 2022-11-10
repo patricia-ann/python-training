@@ -1,3 +1,6 @@
+from os import system
+
+system("clear")
 # Strings
 # a.Assign String to Variable
 greet = 'Hello'

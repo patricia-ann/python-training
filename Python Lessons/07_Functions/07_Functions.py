@@ -1,5 +1,6 @@
-import os
-os.system('cls')
+from os import system
+system("clear")
+
 # Functions - https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 
 

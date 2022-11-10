@@ -1,3 +1,5 @@
+from os import system
+system("clear")
 # REQUESTS
 # In order to interact with data and files from a website, we need to send http requests using a given API url
 # In Python, we can use requests library to send HTTP requests easily.

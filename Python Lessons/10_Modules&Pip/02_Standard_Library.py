@@ -3,14 +3,14 @@
 
 # In here we are importing the built-in os, glob, datetime and math modules
 # More built in modules can be found here -> https://docs.python.org/3/library/
-import os
+from os import system
 import glob
 import math
 from datetime import date
 
 
 # using system function of os module to use a command to clear the terminal
-os.system('cls')
+system("clear")
 
 # using glob to find files with .txt extension
 print(glob.glob('*.txt'))

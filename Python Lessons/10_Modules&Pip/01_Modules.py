@@ -1,3 +1,6 @@
+from os import system
+
+system("clear")
 # https://docs.python.org/3/tutorial/modules.html
 # Modules can be used to create reusable functions on a separate file which can be imported to our main python file or to other python files we may have.
 # In this way, we keep our code maintainable and easy to read.

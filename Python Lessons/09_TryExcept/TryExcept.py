@@ -1,5 +1,6 @@
-import os
-os.system('cls')
+from os import system
+
+system("clear")
 
 # Try, Except and Finally
 # https://docs.python.org/3/tutorial/errors.html#handling-exceptions

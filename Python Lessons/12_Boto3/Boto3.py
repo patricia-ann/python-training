@@ -7,9 +7,9 @@
 
 
 import boto3
-import os
 import uuid
-os.system('cls')
+from os import system
+system("clear")
 
 # Note that profile name can be fetched from ~/.aws/credentials file
 session = boto3.Session(profile_name='profile_name_here')
