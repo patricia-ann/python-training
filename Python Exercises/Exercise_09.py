@@ -8,8 +8,4 @@ os.system('cls')
 # Odd Number!
 # Enter your number here: 8
 # Even Number!
-number = int(input("Enter your number here: "))
-if number % 2 == 0:
-    print("Even Number!")
-else:
-    print("Odd Number!")
+
