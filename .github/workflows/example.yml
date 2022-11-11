@@ -1,0 +1,32 @@
+name: Example Running Python File in Github Actions 
+on:
+  workflow_dispatch:
+    
+jobs:
+  test:
+    runs-on: [self-hosted, common-8gb]
+    
+    steps:
+      - name: Set up Python 3.11.0
+        uses: actions/setup-python@v3 # Github action which setups python env 
+        with:
+          python-version: "3.11"
+        
+      - name: Install Python dependencies # Execute shell script to Install Dependencies
+        run: |
+         python3 --version
+         python3 -m pip install --upgrade pip
+         pip install art
+         
+      - name: Run Python
+        run: |
+          python3 Python Lessons/10_Modules&Pip/03_Install_Packages_with_Pip.py
+          
+         
+     
+          
+          
+    
+       
+
+      

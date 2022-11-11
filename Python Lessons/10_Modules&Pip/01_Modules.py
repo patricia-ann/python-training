@@ -16,7 +16,12 @@ from fibonnaci import fib1, fib2
 # if we import it as above, we can directly call the function name. ex. result = fib1(10)
 
 # Use dot notation to access the functions and pass the result to the variables.
-result = fib.fib1(10)
-result2 = fib.fib2(10)
-print(result)
-print(result2)
+# https://www.geeksforgeeks.org/what-does-the-if-__name__-__main__-do/ 
+# Identifier to let interpreter know the parts to be excuted when invoked directly, and when imported
+
+if __name__ == "__main__":
+    result = fib.fib1(10)
+    result2 = fib.fib2(10)
+    print(result)
+    print(result2)
+

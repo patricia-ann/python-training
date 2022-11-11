@@ -14,3 +14,4 @@ system("clear")
 # Refer to the documentation of the package on how to use the other functions -> https://pypi.org/project/art/
 elit = text2art("PYTHON")
 print(elit)  # Output a text art
+

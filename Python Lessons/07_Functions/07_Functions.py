@@ -11,7 +11,7 @@ def sum(a, b):
 
 
 # Calling the sum function and output the result
-print(sum(10, 12))
+#print(sum(10, 12))
 
 
 # Default Argument Values
@@ -23,7 +23,7 @@ def book_info(book_name, category='Non-Fiction'):
 
 
 # Since category value was not passed, category is assigned to the default value.
-print(book_info('Power of Habit'))
+#print(book_info('Power of Habit'))
 
 
 # Arbitrary Arguments *args can be used to pass varying nunber of positional arguments
@@ -35,7 +35,7 @@ def my_sum(*args):
     return result
 
 
-print("Sum is", my_sum(1, 2, 3, 10, 11))
+#print("Sum is", my_sum(1, 2, 3, 10, 11))
 
 
 # Keyword Arguments **kwargs works just like args but instead of accepting positional arguments, it accepts keyword arguments
@@ -44,4 +44,4 @@ def my_book(**kwargs):
     return f"Book name is {kwargs['name']}, category is {kwargs['category']}, author is {kwargs['author']}"
 
 
-print(my_book(name="The Outliers", category="Non-Fiction", author="Malcolm Gladwell"))
+#print(my_book(name="The Outliers", category="Non-Fiction", author="Malcolm Gladwell"))

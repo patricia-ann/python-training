@@ -1,5 +1,4 @@
 from os import system
-
 system("clear")
 
 # Try, Except and Finally

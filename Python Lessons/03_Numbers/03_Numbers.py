@@ -9,7 +9,7 @@ money = 50000
 
 # c. Print Numbers in Style
 # Format with two decimal places and group by thousand
-print(f"{money:,.2f}")
+#print(f"{money:,.2f}")
 
 # d. Arithmetic Expressions
 # Sequence of Arithmetic Expressions:
@@ -31,4 +31,4 @@ x = 7 // 2  # Output 3
 
 # Example showing the Sequence:
 x = 1 + 2 * 3**2
-print(x)
+#print(x)

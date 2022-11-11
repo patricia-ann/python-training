@@ -22,8 +22,6 @@ system("clear")
 # https://docs.thedogapi.com/
 
 import requests
-import os
-os.system('cls')
 
 # Assign the header part on variable
 # This will be used for Authentication
@@ -63,21 +61,21 @@ else:
 
 # POST
 # Using post method, we mark a dog image as favourite
-response = requests.get('https://api.thedogapi.com/v1/favourites',
-                        headers=headers)
-print(response.json())
+# response = requests.get('https://api.thedogapi.com/v1/favourites',
+#                         headers=headers)
+# print(response.json())
 
-body = {
-    "image_id": image_id,
-    "sub_id": "my-sub-id"
-}
+# body = {
+#     "image_id": image_id,
+#     "sub_id": "my-sub-id"
+# }
 
-response = requests.post('https://api.thedogapi.com/v1/favourites',
-                         headers=headers, json=body)
-print(response)
+# response = requests.post('https://api.thedogapi.com/v1/favourites',
+#                          headers=headers, json=body)
+# print(response)
 
 # DELETE
 # Using delete method, we remove a record as one of our favourites
-response = requests.delete('https://api.thedogapi.com/v1/favourites/9094',
-                           headers=headers)
-print(response)
+# response = requests.delete('https://api.thedogapi.com/v1/favourites/9094',
+#                            headers=headers)
+# print(response)
