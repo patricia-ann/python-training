@@ -1,5 +1,5 @@
 # 1. Download SSO Generator
-# 2. Run the SSOGenerator on Command Line java -jar ssogenerator-2.1.0.jar
+# 2. Run the SSOGenerator on Command Line to login to aws
 # 3. pip install boto3
 # References:
 # https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#bucket
