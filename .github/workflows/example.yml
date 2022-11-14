@@ -7,6 +7,9 @@ jobs:
     runs-on: [ubuntu-latest]
     
     steps:
+      - name: Checkout code
+        uses: checkout@v3 
+
       - name: Set up Python 3.11.0
         uses: actions/setup-python@v3 # Github action which setups python env 
         with:
@@ -17,7 +20,8 @@ jobs:
          python3 --version
          python3 -m pip install --upgrade pip
          pip install art
-         
+     
+
       - name: Run Python
         run: |
           python3 "Python_Lessons/10_Modules&Pip/03_Install_Packages_with_Pip.py"
