@@ -20,7 +20,7 @@ jobs:
          
       - name: Run Python
         run: |
-          python3 Python Lessons/10_Modules&Pip/03_Install_Packages_with_Pip.py
+          python3 "Python_Lessons/10_Modules&Pip/03_Install_Packages_with_Pip.py"
           
          
      
