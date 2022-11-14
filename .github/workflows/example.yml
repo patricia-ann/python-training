@@ -4,7 +4,7 @@ on:
     
 jobs:
   test:
-    runs-on: [self-hosted, common-8gb]
+    runs-on: [ubuntu-latest]
     
     steps:
       - name: Set up Python 3.11.0

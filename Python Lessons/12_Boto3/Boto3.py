@@ -27,29 +27,29 @@ my_bucket = s3_resource.Bucket('bucket_name_here')
 for file in my_bucket.objects.all():
     print(file.key)
 
-# Create a Bucket, Use uuid to append random characters for name to be unique
-my_bucket_name = "python-training-" + str(uuid.uuid4())
-bucket_name = my_bucket_name
-bucket = s3_resource.Bucket(bucket_name)
+# # Create a Bucket, Use uuid to append random characters for name to be unique
+# my_bucket_name = "python-training-" + str(uuid.uuid4())
+# bucket_name = my_bucket_name
+# bucket = s3_resource.Bucket(bucket_name)
 
-# Create Bucket
-response = bucket.create(ACL='private')
+# # Create Bucket
+# response = bucket.create(ACL='private')
 
-# Upload an Object
-response = bucket.upload_file('dog.jpg', 'dog.jpg')
-print(response)
+# # Upload an Object
+# response = bucket.upload_file('dog.jpg', 'dog.jpg')
+# print(response)
 
-# Download an Object
-bucket.download_file(
-    'dog.jpg', "Python Lessons/12_Boto3/my_downloaded_file.jpg")
+# # Download an Object
+# bucket.download_file(
+#     'dog.jpg', "Python Lessons/12_Boto3/my_downloaded_file.jpg")
 
-# Delete an Object
-response = bucket.delete_objects(
-    Delete={
-        'Objects': [
-            {
-                'Key': 'dog.jpg',
-            }
-        ]
-    }
-)
+# # Delete an Object
+# response = bucket.delete_objects(
+#     Delete={
+#         'Objects': [
+#             {
+#                 'Key': 'dog.jpg',
+#             }
+#         ]
+#     }
+# )
