@@ -12,7 +12,7 @@ from os import system
 system("clear")
 
 # Note that profile name can be fetched from ~/.aws/credentials file
-session = boto3.Session(profile_name='profile_name_here')
+session = boto3.Session(profile_name='your profile name here')
 
 # Specify s3 as the AWS resource to use
 s3_resource = session.resource('s3')
@@ -22,10 +22,10 @@ buckets = s3_resource.buckets.all()
 for bucket in buckets:
     print(bucket.name)
 
-# List the contents of a specific bucket
-my_bucket = s3_resource.Bucket('bucket_name_here')
-for file in my_bucket.objects.all():
-    print(file.key)
+# # List the contents of a specific bucket
+# my_bucket = s3_resource.Bucket('abctests3')
+# for file in my_bucket.objects.all():
+#     print(file.key)
 
 # # Create a Bucket, Use uuid to append random characters for name to be unique
 # my_bucket_name = "python-training-" + str(uuid.uuid4())
