@@ -8,7 +8,8 @@ while True:
     try:
         x = int(input("Please enter a number: "))
         break
-    except ValueError as error:
-        print("Please enter a valid number! ", error)
+    except ValueError as e:
+        print("Please enter a valid number! ", e)
+        break
     finally:  # Statements under finally will always run regardless if there's an error catched or not.
         print("The End.")

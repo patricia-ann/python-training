@@ -31,11 +31,10 @@ def my_sum(*args):
     result = 0
     # Iterating over the Python args tuple
     for x in args:
-        result += x
+        result += x # result = result + x 
     return result
 
-
-#print("Sum is", my_sum(1, 2, 3, 10, 11))
+#print("Sum is", my_sum(1, 2, 3, 10, 11, 12))
 
 
 # Keyword Arguments **kwargs works just like args but instead of accepting positional arguments, it accepts keyword arguments
@@ -43,5 +42,4 @@ def my_sum(*args):
 def my_book(**kwargs):
     return f"Book name is {kwargs['name']}, category is {kwargs['category']}, author is {kwargs['author']}"
 
-
-#print(my_book(name="The Outliers", category="Non-Fiction", author="Malcolm Gladwell"))
+print(my_book(name="The Outliers", category="Non-Fiction", author="Malcolm Gladwell"))

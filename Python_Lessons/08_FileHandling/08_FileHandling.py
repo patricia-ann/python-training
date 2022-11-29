@@ -1,10 +1,10 @@
 
 import os 
-os.system("clear")
+# os.system("clear")
 # Files Handling
 # Write, Read, and Delete
 
-# Creating and Writing to file.
+# # Creating and Writing to file.
 with open('mytest.txt', 'w') as file:
     file.write("This is the first line")
 
@@ -18,4 +18,4 @@ with open('mytest.txt', 'w') as file:
 #     print(file.read())
 
 # # Removing a file.
-# os.remove('mytest.txt')
+#os.remove('mytest.txt')

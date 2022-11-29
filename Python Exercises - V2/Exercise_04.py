@@ -10,6 +10,14 @@ system("clear")
 
 
 # Your Code here
+def calculation(num1, num2):
+    result1 = num1 + num2
+    result2 = num1 - num2
+    print(f"Expected output is: {result1}, {result2}")
 
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter 2nd number: "))
+
+calculation(num1, num2)
+
+

@@ -18,7 +18,7 @@ num = 100
 
 # While
 # Used for repeated execution as long as an expression is true
-# print("Using while loop to execute until 4!")
+# # print("Using while loop to execute until 4!")
 # num = 0
 # while num < 5:
 #     print(num)
@@ -40,22 +40,26 @@ num = 100
 # For Loops
 # Looping through string
 # print("Looping through a string!")
-my_string = "PYTHON"
+# my_string = "PYTHON"
 # for i in my_string:
 #      print(i)
+
 # For the examples to loop thru list, tuple and dictionary, refer to DataStructures Lesson
-
-
 # range() can be used to generate arithmetic progressions
 # range(start, stop, step)
 
+# Examples:
 # range(5) # 0 until 4 
-# range (0, 5) # 0 until 4 
-# range (0, 5, -1) # 0 until 4 
+# range (1, 5, 2) # 1 until 4 
+# range (5, 0, -1) # 0 until 4 
+# 5
+# 4
+# 3
+# 2
+# 1
 
 
-
-# # print("Using range to print hello 3 times")
+# print("Using range to print hello 3 times")
 # for i in range(3):
 #     print("hello", i)
 
@@ -73,17 +77,18 @@ my_string = "PYTHON"
 numbers = [1, 2, 3, 4]
 
 # created a new list called squares from numbers list
-squares = []
+# squares = []
 # for i in range(len(numbers)):
 #     squares.append(numbers[i]**2)
+
+
+# squares = [i**2 for i in numbers]
+# print(type(squares))
 # print(squares) 
-
-#squares = [i**2 for i in numbers]
-
 
 
 # Enumerate
-cities = ['Manila', 'Pasig', 'Mandaluyong']
+# cities = ['Manila', 'Pasig', 'Mandaluyong']
 # print("Using enumerate to loop thru a list and output the index and list values!")
 # for index, c in enumerate(cities):
 #     print(index, c)
@@ -94,6 +99,6 @@ names = ['Peter Parker', 'Clark Kent', 'Bruce Wayne']
 heroes = ['Spiderman', 'Superman', 'Batman']
 
 # print("Using zip to loop thru multiple list!")
-# for name, hero in zip(names, heroes):
-#     print(f"{name} is actually {hero}")
+for name, hero in zip(names, heroes):
+    print(f"{name} is actually {hero}")
 
