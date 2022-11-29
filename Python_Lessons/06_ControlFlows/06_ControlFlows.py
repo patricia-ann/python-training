@@ -19,34 +19,43 @@ num = 100
 # While
 # Used for repeated execution as long as an expression is true
 # print("Using while loop to execute until 4!")
-num = 0
-while num < 5:
-    #print(num)
-    num += 1  # add 1 to num each loop
+# num = 0
+# while num < 5:
+#     print(num)
+#     num += 1  # add 1 to num each loop
 
 
 # print("Using break to halt the loop and continue to skip an iteration")
-num2 = 0
-while num2 < 10:
-    num2 += 1
-    if num2 == 1:
-        continue
-    elif num2 == 5:
-        break
-    #print(num2)
+# num2 = 0
+# while num2 < 10:
+#     num2 += 1
+#     if num2 == 1:
+#         continue
+#     elif num2 == 5:
+#         break
+#     print(num2)
+
 
 
 # For Loops
 # Looping through string
 # print("Looping through a string!")
-# my_string = "PYTHON"
+my_string = "PYTHON"
 # for i in my_string:
-#     print(i)
+#      print(i)
 # For the examples to loop thru list, tuple and dictionary, refer to DataStructures Lesson
 
+
 # range() can be used to generate arithmetic progressions
-# print("Using range to print hello 3 times")
-# range(start, end)
+# range(start, stop, step)
+
+# range(5) # 0 until 4 
+# range (0, 5) # 0 until 4 
+# range (0, 5, -1) # 0 until 4 
+
+
+
+# # print("Using range to print hello 3 times")
 # for i in range(3):
 #     print("hello", i)
 
@@ -62,8 +71,16 @@ while num2 < 10:
 
 # Using List Comprehension to create a new list
 numbers = [1, 2, 3, 4]
+
 # created a new list called squares from numbers list
-squares = [i**2 for i in numbers]
+squares = []
+# for i in range(len(numbers)):
+#     squares.append(numbers[i]**2)
+# print(squares) 
+
+#squares = [i**2 for i in numbers]
+
+
 
 # Enumerate
 cities = ['Manila', 'Pasig', 'Mandaluyong']

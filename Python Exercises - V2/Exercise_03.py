@@ -14,3 +14,4 @@ system("clear")
 # 18
 # 20
 
+num = int(input("Enter a number: "))
